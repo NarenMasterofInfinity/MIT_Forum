@@ -1,0 +1,63 @@
+.ccatbody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+#fs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fs label {
+    font-size: 16px;
+    color: #333;
+}
+
+#fs input[type="text"],
+#fs input[type="file"],
+#fs textarea {
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#fs textarea {
+    resize: vertical;
+}
+
+#error {
+    font-size: 16px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+#fs input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fs input[type="submit"]:hover {
+    background-color: #0056b3;
+}

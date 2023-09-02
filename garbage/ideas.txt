@@ -1,0 +1,9 @@
+add flex wrap or simply flex-flow : row wrap
+flex-basis : auto
+also play with gap to align things
+
+align-content : space-around
+request category section
+try to add sad emoji after every error
+anonymous post
+maybe another column in category that show its genre.... can do filtering then

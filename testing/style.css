@@ -1,0 +1,41 @@
+.reply-wrapper{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    max-width:500px;
+}
+.rephead{
+    color:white;
+}
+.repinput p{
+    color:white;
+    font-size:16px;
+}
+.repinput textarea{
+    height:180px;
+    padding:1rem;
+    display:block;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    width:85%;
+    
+    overflow:auto;
+    margin:0;
+ 
+
+    border:1px solid #d4d4d4!important;
+}
+.btns{
+    margin:12px;
+    display:flex;
+    gap:150px;
+}
+.btns input{
+    
+    width:100px;
+}
+.btns button{
+    transform: translateX(-20px);
+    width:100px;
+}

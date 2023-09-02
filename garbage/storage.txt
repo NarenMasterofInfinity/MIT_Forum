@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+</head>
+<body>
+    <?php if(isset($_SESSION['signedin']) && $_SESSION['signedin']){
+        ?>
+    <form name = 'fs' action = 'login_action.php' method = 'post'>
+        <div class="otp">
+            <h3>OTP Verification</h3>
+            <?php 
+            if($success == 1){
+            ?>
+            <p style = "color:green"> OTP has been successfully sent</p>
+            <?php }?>
+            <label for = "otp">Enter your OTP</label>
+            <input name = "otp" type = "number"><br>
+            <input type = "submit" name = "submit_otp">
+            <?php 
+            if($success == 1 && $error_msg){ 
+            ?>
+            <p style = "color:red"><?php echo $error_msg ?></p>
+            <?php }?>
+            <?php 
+            if($success == 2){
+            ?>
+            <p style = "color:green">You have successfully logged in</p>
+            <a href = "index.php">Go to Forum</a>
+            <?php } ?>
+        </div>
+    </form>
+    <?php } ?>
+    <?php
+        include('footer.php');
+    ?>
+</body>
+</html>

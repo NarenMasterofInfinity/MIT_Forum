@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.user {
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.posts {
+    margin-top: 20px;
+}
+.postuser{
+    font-size: xx-large;
+    background-color:#f0f7ff;
+
+}
+.postuser{
+    display:grid;
+    place-items: center;
+}
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+}
+.post:hover{
+    border:2px solid #bed0e4;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.bio input[type = 'submit']{
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.bio input[type = 'submit']:hover{
+    background-color: #0056b3;
+
+}
+.user hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.user .uname{
+    font-weight:bold;
+    font-size:24px;
+    
+}
+.user .dept{
+    font-size:14px;
+    color:#1f1f1f;
+}
+.user .created{
+    color:#4a4a4a;
+    font-size:14px;
+}
+.user .bio{
+    font-size:14px;
+}

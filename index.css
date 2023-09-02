@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Mermaid';
+  src: url('assets/font/Mermaid1001.ttf');
+}
+@font-face{
+  font-family:'Handwritten';
+  src:url('assets/font/Evening\ Wind.ttf')
+}
+.bd {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura', sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+    
+  }
+  .turn{
+    font-family: 'Mermaid', sans-serif;
+  }
+  .turnarc {
+    display: block;
+    width:300px;
+    height:300px;
+}
+
+  .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one,.three,.start{
+    width:100vw;
+    height:100vh;
+  }
+  .two{
+    height:auto;
+    width: 100vw;
+  }
+.one{
+    display:grid;
+    
+}
+.lamp-container{
+  position:absolute;
+}
+.lamp{
+  position:relative;
+  left:50%;
+}
+
+.light{
+  position:relative;
+  left:14%;
+  top:-20px;
+}
+.left{
+    display:grid;
+    grid-column: 1;
+    place-items:center;
+    align-items: center;
+    border-right:2px solid rgb(237, 108, 108);
+    background-color:white;
+    color:black;
+}
+.left h2{
+    font-size:3rem;
+}
+.focus{
+    color:rgb(237, 108, 108);
+}
+.right{
+    grid-column:2;
+    display:grid;
+    place-items:center;
+    justify-content: center;
+    background-color:black;
+    color:white;
+}
+  .start h1{
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225, 225, 225, 0.011);
+    background-image: url('assets/img/03.jpg');
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+  .scroll{
+    position: absolute;
+    top:90%;
+    left:50%;
+    animation:downmotion 1s linear infinite;
+    transform: translateY(-40px);
+  }
+  .scroll h3{
+    transform: translateX(-40%);
+  }
+.fa{
+    color:grey;
+    font-size: 2rem;
+}
+.white{
+    color:white;
+    
+}
+  @keyframes downmotion{
+
+  }
+
+.lamp-container h1{
+  position: absolute;
+  transform: translate(43%,-457%);
+  font-family:'Mermaid',sans-serif;
+
+  font-size:100px;
+}
+#turnon:hover{
+  color:yellow;
+  cursor:pointer;
+}
+.light{
+  opacity:0;
+}
+.content2{
+  display:none;
+  transform: translate(20%,600%);
+  animation:fadein 1s ease;
+}
+.content2 p{
+  font-family: Arial, Helvetica, sans-serif;
+  transform : translate(-3%,-600px);
+}
+#highlight{
+  font-size: 5rem;
+  transform: translate(-10%,-300%);
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  font-family: 'Handwritten',sans-serif;
+}
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  25%{
+    opacity:0.25;
+  }
+  50%{
+    opacity:0.5;
+  }
+  75%{
+    opacity:0.75;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.three{
+  transform:translateY(90%);
+  position:relative;
+}
+footer{
+  background-color: rgba(240, 255, 255, 0.492);
+  transform:translate(0,10%);
+}

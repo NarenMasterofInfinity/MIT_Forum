@@ -1,0 +1,7 @@
+check session variables
+connect webpages
+make header and footer
+
+
+
+have made changes in signupvalidate code and signup code.

@@ -1,0 +1,20 @@
+as long as the inputs container error submit button shall not redirect to the php
+Error check with js
+Database storage with php
+response structure --> keys/nvalues keys --> attribute,status
+
+signin check --> to make sure that username and email is not already taken
+
+email regex analysis
+
+otp
+
+
+want to check if the user already exists
+
+how tf do i get the emaili n login php
+
+
+Login.php:
+
+in echos add paragraph tag with classes so they can be styled later
